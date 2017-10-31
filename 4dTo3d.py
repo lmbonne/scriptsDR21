@@ -16,4 +16,4 @@ newHeader = header
 del newHeader[25:30]
 del newHeader[5]
 writeHdu = pyfits.PrimaryHDU(data,newHeader)
-writeHdu.write(directory + '3d_' + fitsName,clobber='True')
+writeHdu.writeto(directory + '3d_' + fitsName,clobber='True')
